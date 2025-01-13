@@ -5,20 +5,20 @@
 class Bloader < Formula
   desc ""
   homepage ""
-  version "0.1.19"
+  version "0.1.20"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ablankz/bloader/releases/download/v0.1.19/bloader_ 0.1.19_Darwin_x86_64.tar.gz"
-      sha256 "ddef277afcec93996de931de9dae5612bd411adf636d38c97850972bcb0bea2a"
+      url "https://github.com/ablankz/bloader/releases/download/v0.1.20/bloader_ 0.1.20_Darwin_x86_64.tar.gz"
+      sha256 "811ee72318e86ba64307f465311ccdc603428d54506ffebe48db57b3459d954c"
 
       def install
         bin.install "bloader"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ablankz/bloader/releases/download/v0.1.19/bloader_ 0.1.19_Darwin_arm64.tar.gz"
-      sha256 "f204cb819c83f9b76d3ed16a554a9894be8b8c9e0725acb90c519a6b8277544e"
+      url "https://github.com/ablankz/bloader/releases/download/v0.1.20/bloader_ 0.1.20_Darwin_arm64.tar.gz"
+      sha256 "a4464e7908e75435824796e92bdf7dc0b7b9459a38bff752729011b23f8c2b97"
 
       def install
         bin.install "bloader"
@@ -29,8 +29,8 @@ class Bloader < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ablankz/bloader/releases/download/v0.1.19/bloader_ 0.1.19_Linux_x86_64.tar.gz"
-        sha256 "2873491a04e79655a4be5c67f33801c3482f09c7de257c2f77fc835497788bf6"
+        url "https://github.com/ablankz/bloader/releases/download/v0.1.20/bloader_ 0.1.20_Linux_x86_64.tar.gz"
+        sha256 "e72b7205fa1e10a86d1156ea9d3d981aa9bcfd37473a4be0d0d67a5066761cd9"
 
         def install
           bin.install "bloader"
@@ -39,8 +39,8 @@ class Bloader < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ablankz/bloader/releases/download/v0.1.19/bloader_ 0.1.19_Linux_arm64.tar.gz"
-        sha256 "d1a9e62e151adc3cc1584f16b0f854a6f00e1bce09b211b5f385846b792c3755"
+        url "https://github.com/ablankz/bloader/releases/download/v0.1.20/bloader_ 0.1.20_Linux_arm64.tar.gz"
+        sha256 "335c367510cf0c5c06a4a1399420cf8608812ab12b50994167d159658cd4bc4f"
 
         def install
           bin.install "bloader"
