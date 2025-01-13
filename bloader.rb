@@ -5,20 +5,20 @@
 class Bloader < Formula
   desc ""
   homepage ""
-  version "0.1.7"
+  version "0.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ablankz/bloader/releases/download/v0.1.7/bloader_Darwin_x86_64.tar.gz"
-      sha256 "926f873f79e5a8e20c10f7d3ee87da1b76bab93afcdd55d73f8983d6f9f01c64"
+      url "https://github.com/ablankz/bloader/releases/download/v0.1.9/bloader_Darwin_x86_64.tar.gz"
+      sha256 "e9c0bb772db39a36c9172de82818c76d336c4f8b0933b362100522a78c0df585"
 
       def install
         bin.install "bloader"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ablankz/bloader/releases/download/v0.1.7/bloader_Darwin_arm64.tar.gz"
-      sha256 "a334f09f4c0b893d10d38850a28f26139893140a2b0e463e2014c7b7018e4b02"
+      url "https://github.com/ablankz/bloader/releases/download/v0.1.9/bloader_Darwin_arm64.tar.gz"
+      sha256 "24b786120d792f0e2a7c8b57b0415077433f558b707e2fe8a4aa16adfa0b5bf0"
 
       def install
         bin.install "bloader"
@@ -29,8 +29,8 @@ class Bloader < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ablankz/bloader/releases/download/v0.1.7/bloader_Linux_x86_64.tar.gz"
-        sha256 "4e31257ba619f8e7aaffe5c7b381d7bc11666290d078b333f551eb5760fc8417"
+        url "https://github.com/ablankz/bloader/releases/download/v0.1.9/bloader_Linux_x86_64.tar.gz"
+        sha256 "9d61082b40f4bae3968a7fb0464af509388e0316b1fe0be2d048ad3d09a51e54"
 
         def install
           bin.install "bloader"
@@ -39,8 +39,8 @@ class Bloader < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ablankz/bloader/releases/download/v0.1.7/bloader_Linux_arm64.tar.gz"
-        sha256 "40eb9daf61a8c8fed262be1e3e7614ab5a778feee45519a015e8aaa81492ecf3"
+        url "https://github.com/ablankz/bloader/releases/download/v0.1.9/bloader_Linux_arm64.tar.gz"
+        sha256 "0bb117456355509fb2c170367f0e58fd93f9c1a94c5bc0fe180b3a7488663bc0"
 
         def install
           bin.install "bloader"
